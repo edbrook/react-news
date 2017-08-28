@@ -95,7 +95,10 @@ class App extends Component {
     fetch(url)
       .then((res) => res.json())
       .then((sources) => {
-        this.setState({ sources: sources.sources });
+        this.setState({
+          sources: sources.sources
+            .filter((i) => i.category !== "sport")
+        });
       });
   }
 
