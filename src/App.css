@@ -1,24 +1,54 @@
-.App {
-  text-align: center;
+.newsSourceList, .newsItemList {
+  display: flex;
+  flex-flow: wrap;
+  justify-content: space-around;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.newsSource, .newsItem {
+  min-width: 150px;
+  max-width: 300px;
+  margin: 8px;
+  padding: 16px; 
+  border: 3px solid #ADD8E6;
+  border-radius: 15px;
+  background-color: #F5F5DC;
+  box-shadow: 1px 1px 3px #888;
+  color: darkblue;
+  cursor: pointer;
+  user-select: none;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.newsSource:hover {
+  border: 3px solid #90BFCE;
+  box-shadow: 3px 3px 5px #888;
 }
 
-.App-intro {
-  font-size: large;
+.newsSourceName {
+  font-weight: bold;
+  font-size: 1.3rem;
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.newsSourceDesc {
+  text-align: justify;
+  text-indent: 10px;
+  margin: 5px 0px;
+}
+
+.newsSourceCat, .newsSourceLang, .newsSourceCountry {
+  margin: 0px 5px;
+  font-style: italic;
+}
+
+.newsItemImg {
+  min-width: 150px;
+  max-width: 300px;
+}
+
+.newsItemTitle {
+  font-weight: bold;
+}
+
+.backBtn {
+  box-shadow: 3px 3px 3px #AAA;
+  margin: 16px;
 }
